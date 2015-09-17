@@ -49,7 +49,7 @@ body {
     border-color: lightblue;
 }
 .center {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 h1 {
@@ -65,4 +65,44 @@ h1 {
     display: block;
     margin: auto;
     border-radius: 100px;
+}
+
+.ng-enter{
+    transition: 0.75s;
+    opacity: 0;
+}
+.ng-enter-active{
+    opacity: 1;
+}
+
+#resume {
+    background-color: white;
+    padding: 16px;
+    padding-top: 1px;
+    border: 2px solid lightsteelblue;
+    border-radius: 7px;
+}
+#resume h3, #resume h4 {
+    margin-bottom: 0;
+    border-bottom: 1px dotted steelblue;
+}
+#resume span {
+    float: right;
+}
+#resume h4 {
+    
+}
+#resume ul {
+    margin: 0;
+}
+#resume li {
+    
+}
+#resume p {
+    margin: 0;
+}
+
+#about figcaption {
+    text-align: right;
+    font-size: small;
 }

@@ -1,29 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-contoller="mainCtrl">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Adrian Goetz Portfolio</title>
 
-	<style>
-		.ng-enter{
-			transition: 0.75s;
-			opacity: 0;
-		}
-		.ng-enter-active{
-			opacity: 1;
-		}
-
-	</style>
-
 </head>
 <body ng-app="APP" class="bg-gradient" ng-init="page = 'html/home.html'" ng-init="headerIf = false">
-	<nav class="buttons">
-		<a ng-click="page = 'html/home.html'">Home</a>
-		<a ng-click="page = 'html/resume.html'">Resume</a>
-		<a ng-click="page = 'html/about-me.html'">About Me</a>
-		<a ng-click="page = 'html/contact-me.html'">Contact Me</a>
-	</nav>
+	<div>
+		<nav class="buttons">
+			<a ng-click="page = 'html/home.html'">Home</a>
+			<a ng-click="page = 'html/resume.html'">Resume</a>
+			<a ng-click="page = 'html/about-me.html'">About Me</a>
+			<a ng-click="page = 'html/contact-me.html'">Contact Me</a>
+		</nav>
+	</div>
 	<div class="center">
 		<h1>Adrian Goetz</h1>
 		<div ng-include="page"></div>
@@ -31,11 +22,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
-
-	<script>
-	angular.module('APP', ['ngAnimate']).
-	controller('theController', ['$scope', function($scope) {}])
-	</script>
+	<script src="js/my-angular.js"></script>
 
 </body>
 </html>
