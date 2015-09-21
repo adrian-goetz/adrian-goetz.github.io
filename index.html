@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-contoller="mainCtrl">
+<html lang="en" ng-app="APP" ng-controller="mainCtrl">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Adrian Goetz Portfolio</title>
 
 </head>
-<body ng-app="APP" class="bg-gradient" ng-init="page = 'html/home.html'" ng-init="headerIf = false">
+<body class="bg-gradient" ng-init="headerIf = false">
 	<div>
 		<nav class="buttons">
-			<a ng-click="page = 'html/home.html'">Home</a>
-			<a ng-click="page = 'html/resume.html'">Resume</a>
-			<a ng-click="page = 'html/about-me.html'">About Me</a>
-			<a ng-click="page = 'html/contact-me.html'">Contact Me</a>
+			<a ng-click="setPage('html/home.html')">Home</a>
+			<a ng-click="setPage('html/experience.html')">Experience</a>
+			<a ng-click="setPage('html/about-me.html')">About Me</a>
+			<a ng-click="setPage('html/contact-me.html')">Contact Me</a>
 		</nav>
 	</div>
 	<div class="center">

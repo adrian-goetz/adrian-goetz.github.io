@@ -1,22 +1,26 @@
-angular.module('APP', ['ngAnimate']).
+app = angular.module('APP', ['ngAnimate']);
 
-controller('mainCtrl', ['$scope', function($scope) {
+app.controller('mainCtrl', ['$scope', function($scope) {
 
-	$scope.test = "Howdy";
-	console.log($scope);
-	console.log("test");
+	$scope.page = 'html/home.html';
 
-}]);
-
-angular.module('APP', ['ngAnimate']).controller('bannerCtrl', ['$scope', function($scope) {
-
-	$scope.test = "Howdy";
-	console.log($scope);
-	console.log("test");
+	$scope.setPage = function(newPage) {
+		$scope.page = newPage;
+	}
 
 }]);
 
-angular.module('APP', ['ngAnimate']).factory('ResulSet', function() {
+app.controller('expCtrl', ['$scope', function($scope) {
+
+	$scope.tab = 'html/resume.html';
+
+	$scope.setTab = function(newTab) {
+		$scope.tab = newTab;
+		console.log('set tab');
+	}
+}]);
+
+app.factory('ResulSet', function() {
     function ResultSetInstance(dataSet) { 
         this.filter = function(){ 
             // ...

@@ -1,0 +1,10 @@
+<div ng-controller="expCtrl">
+	<div id="resume-head">
+		<h2 ng-click="setTab('html/resume.html')">Resume</h2>
+		<h2 ng-click="setTab('html/projects.html')">Projects</h2>
+		<h2 ng-click="setTab('html/languages.html')">Languages</h2>
+	</div>
+	<div id="resume">
+		<div ng-include="tab"></div>
+	</div>
+</div>
