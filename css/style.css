@@ -17,6 +17,7 @@ h1 {
 }
 
 html {
+    min-width: 650px;
     height: 100%;
     overflow-y: scroll;
 }
