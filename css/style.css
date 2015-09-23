@@ -10,10 +10,10 @@
     background-attachment: fixed;
 }
 h1 {
-    font-family: 'Oswald';
+    font-family: 'Oswald', Sans-Serif;
 }
 .buttons a, #resume-head h2 {
-    font-family: 'Lato';
+    font-family: 'Lato', Sans-Serif;
 }
 
 html {
@@ -93,6 +93,8 @@ figcaption {
 }
 
 #resume {
+    position: relative;
+    z-index: 2;
     background-color: white;
     margin-top: -12px;
     padding: 16px;
@@ -117,19 +119,19 @@ figcaption {
 #resume p {
     margin: 0;
 }
-#resume-head h2 {
-    font-size: 18px;
-    color: darkblue;
-    background-color: lightsteelblue;
-}
 
 #resume-head {
+    position: relative;
+    z-index: 1;
     margin-top: 15px;
     display: table;
     table-layout: fixed;
     width: 100%;
 }
 #resume-head h2 {
+    font-size: 18px;
+    color: darkblue;
+    background-color: lightsteelblue;
     display: table-cell;
     border: 2px solid white;
     border-radius: 10px;
@@ -221,7 +223,8 @@ figcaption {
 .cv-button {
     display: block;
     margin: auto;
-    width: 10em;
+    width: 11em;
+    text-align: center;
     font-family: 'Lato';
     font-size: 16px;
     font-weight: bold;
