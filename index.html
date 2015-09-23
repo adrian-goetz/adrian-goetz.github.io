@@ -12,13 +12,22 @@
 			<a ng-click="setPage('html/home.html')">Home</a>
 			<a ng-click="setPage('html/experience.html')">Experience</a>
 			<a ng-click="setPage('html/about-me.html')">About Me</a>
-			<a ng-click="setPage('html/contact-me.html')">Contact Me</a>
+			<!-- <a ng-click="setPage('html/contact-me.html')">Contact Me</a> -->
 		</nav>
 	</div>
 	<div class="center">
 		<h1>Adrian Goetz</h1>
 		<div ng-include="page"></div>
 	</div>
+
+	<footer>
+		<p>&copy; Adrian Goetz, all rights reserved.
+			<br>
+			Contact Me!
+			<br>
+			<a href="mailto:adrian.goetz@gmail.com?subject=Website">Adrian.Goetz@Gmail.com</a>
+		</p>
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>

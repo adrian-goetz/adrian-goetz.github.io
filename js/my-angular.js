@@ -12,7 +12,7 @@ app.controller('mainCtrl', ['$scope', function($scope) {
 
 app.controller('expCtrl', ['$scope', function($scope) {
 
-	$scope.tab = 'html/resume.html';
+	$scope.tab = 'html/work-xp.html';
 
 	$scope.setTab = function(newTab) {
 		$scope.tab = newTab;
